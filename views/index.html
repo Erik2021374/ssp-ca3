@@ -37,8 +37,36 @@
         <!-- Page content-->
         <div class="container">
             <div class="text-center mt-5">
-                <h1>Welcome to our Amazing Cyber Cafe</h1>
-                <p class="lead">Select your hot beverages and time on our menu below</p>
+                <h1>💻☕😊 Welcome to our Amazing Cyber Cafe 💻☕😊</h1>
+                <p class="lead">Select your beverages and time on our menu below</p>
+                <div class="row">
+                    <div id="menu" class="col-lg-4 mb-5 order-1"></div>
+                        <form enctype="application/json" action="post.json" method="post">
+                            <div class="form-group">
+                                <select class="form-select" name="sec-n">
+                                    <option value="0">Hot Coffees</option>
+                                    <option value="0">Cold Coffees</option>
+                                    <option value="0">Hot Drinks</option>
+                                    <option value="0">Cold Drinks</option>
+                                    <option value="0">Hot Teas</option>
+                                    <option value="0">Iced Teas</option>
+                                    <option value="0"></option>
+                                    <option value="0"></option>
+                                    <option value="0"></option>
+                                </select>
+                                <imput class="form-control mt-3" type="text" name="item">Item</imput>
+                                <imput class="form-control mt-3" type="text" name="price" placeholder="price">Price</imput>
+                                <div class="d-grid gap-2">
+                                    <buttom type="submit" class="btn btn-primary btn-block">Submit</buttom>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="d-grid gap-2">
+                            <buttom id="delete" class="btn btn-danger btn-block mt-3">Delete</buttom>
+                        </div>
+                    <div id="results" class="col-lg-8-mb5 order-2"></div>
+
+                </div>
             </div>
         </div>
         <!-- Bootstrap core JS-->
